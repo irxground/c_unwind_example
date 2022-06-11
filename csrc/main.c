@@ -11,6 +11,7 @@ void *call_increment(void *ptr) {
     return NULL;
 }
 
+jmp_buf g_env;
 void *call_longjmp(void *ptr) {
     longjmp(g_env, 1);
     return NULL;

@@ -11,4 +11,4 @@ target/release/libc_unwind_example.a: cargo_build
 
 .PHONY: cargo_build
 cargo_build:
-	cargo build --release -q
+	cargo build --release
